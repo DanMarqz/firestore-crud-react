@@ -56,33 +56,31 @@ const Links = () => {
 
   return (
     <div>
-      <div className="col-md-4 p-2">
+      <div className="col-md-12 p-2">
         <LinkForm {...{ addOrEditLink, currentId, links }} />
       </div>
 
-      <div className="col-md-8">
+      <div className="col-md-12">
         {links.map((link) => (
-          <div className="card mb-1" key={link.id}>
-            <div className="card-body">
+          <div className="card text-white bg-primary mb-3" style={{maxWidth: "20rem"}}  key={link.id}>
+            <div>
               <div className="d-flex justify-content-between">
-                <h4>{link.name}</h4>
-                <div>
+                <h4 className="card-title pl-2 pt-2">{link.name}</h4>
                   <i
-                    className="material-icons text-danger"
+                    className="material-icons text-danger p-2"
                     onClick={() => onDeleteLink(link.id)}
                   >
                     close
                   </i>
                   <i
-                    className="material-icons text-primary"
+                    className="material-icons text-warning p-2"
                     onClick={() => setCurrentId(link.id)}
                   >
                     create
                   </i>
-                </div>
               </div>
-              <p>{link.description}</p>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <h6 className="card-title pl-2">{link.description}</h6>
+              <a className="card-text text-dark p-2" href={link.url} target="_blank" rel="noopener noreferrer">
                 Go to Website
               </a>
             </div>

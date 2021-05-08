@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="container p-4">
+    <div className="container">
       <div className="row">
+      
         <Links />
+
       </div>  
       <ToastContainer /> 
     </div>

@@ -3,12 +3,12 @@ import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyBvpl5x9ul8pGUfbZNqNeKQPg1QGzsW8eI",
-  authDomain: "react-crud-fbase.firebaseapp.com",
-  projectId: "react-crud-fbase",
-  storageBucket: "react-crud-fbase.appspot.com",
-  messagingSenderId: "356786250960",
-  appId: "1:356786250960:web:d558eaf6bc645e9894ead5"
+  apiKey: "AIzaSyBw_hZtwd9J3Ublakh1XN9Gafx_qV6RpYg",
+  authDomain: "fb-autho-868b3.firebaseapp.com",
+  projectId: "fb-autho-868b3",
+  storageBucket: "fb-autho-868b3.appspot.com",
+  messagingSenderId: "643299201198",
+  appId: "1:643299201198:web:86e768e000fdc9418cdd3f",
 };
 
 // Initialize Firebase

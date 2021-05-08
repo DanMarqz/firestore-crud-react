@@ -37,7 +37,7 @@ const LinkForm = (props) => {
     } else {
       getLinkById(props.currentId);
     }
-  }, [props.currentId]);
+  }, [initialStateValues, props.currentId]);
 
   return (
     <form className="card card-body" onSubmit={handleSubmit}>
